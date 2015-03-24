@@ -1,0 +1,176 @@
+@import "normalize";
+@import "variables";
+@import "grid";
+@import "modern-business";
+
+
+$inverse-color: #9d9d9d;
+
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	padding-top: 0px;
+	width: 100%;
+}
+
+
+
+.nav {
+	list-style: none;
+	padding-left: 0;
+	vertical-align: middle;
+	li {
+		float:left;
+		display:block;
+		position: relative;
+		height: 50px;
+	}
+	a {
+		padding: 15px 15px;
+		display: block;
+	}
+}
+
+.navbar {
+	margin-bottom: 20px;
+
+}
+
+.navbar-inverse {
+	background-color: #222;
+	border-color: #080808;
+	color: $inverse-color;
+}
+
+.navbar-fixed-top {
+	top: 0;
+	border-width: 0 0 1px;
+}
+
+.navbar-header {
+	float:left;
+	.navbar-brand {
+		float: left;
+		height: 50px;
+		padding: 15px 15px;
+		font-size: 18px;
+		line-height: 20px;
+	}
+
+}
+
+.navbar-nav {
+	float:left;
+	margin: 0;
+}
+
+.navbar-right {
+	float:right;
+}
+
+.lead {
+	margin-bottom: 20px;
+}
+.img-responsive {
+	width: 100%;
+	height: 100%;
+}
+
+.page-header {
+	padding: 9px;
+	margin: 40px 0 20px;
+	border-bottom: 1px solid #eee;
+}
+
+.list-unstyled {
+	list-style: none;
+}
+
+.list-inline {
+	display:inline;
+}
+
+.list-inline > li{
+	float:left;
+}
+
+.text-center {
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	background-color: transparent;
+	color:inherit;
+}
+
+h2 {
+	padding-bottom: 9px;
+}
+
+h1 small {
+	color: $inverse-color;
+}
+
+.form-group {
+	margin-bottom:15px;
+}
+
+label {
+	display:inline-block;
+	margin-bottom: 5px;
+	font-weight: 700;
+}
+
+.form-control {
+	display:block;
+	width: 100%;
+	height: 34px;
+	padding: 6px 12px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.btn {
+	color: #fff;
+	background-color: #337ab7;
+	border-color: #2e6da4;
+}
+
+.btn-primary {
+	display:inline-block;
+	padding: 6px 12px;
+	font-size: 14px;
+	font-weight: 400;
+	text-align:center;
+	white-space: nowrap;
+	vertical-align: middle;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+
+.breadcrumb {
+	padding: 8px 15px;
+	margin-bottom: 20px;
+	list-style: none;
+	background-color: #f5f5f5;
+	border-radius:4px;
+	li {
+		display: inline-block;
+	}
+}
+
+textarea {
+	overflow:auto;
+}
+
+textarea.form-control {
+	height:auto;
+}
+
+@import "media-queries";
